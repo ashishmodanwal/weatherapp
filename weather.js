@@ -24,9 +24,7 @@ window.addEventListener("load", () => {
   const liveDate = document.querySelector("#date");
   const liveTime = document.querySelector("#time");
 
- inputElement.addEventListener("input",function() {
-   alert("hello word")
- })
+
   let lat;
   let long;
 
