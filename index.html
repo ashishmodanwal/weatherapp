@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Weather</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="weather.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="navbar">
+			<a href="#default" id="logo">Weather App</a>
+			<div id="navbar-right">
+				<a class="active" href="#home">Home</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+			<center><img id="img" src="weatherlogo.png" height="70px" width="70px"></center>
+		</div>
+		<div class="container">
+			<form>
+				<input type="text" name="name" placeholder="Search Here city name...">
+			</form>
+			<table>
+				<thead>
+				<tr>
+					<th>Input</th>
+					<th>Result</th>
+					<th>Another</th>
+				</tr>
+				</thead>
+				<tr>
+					<td>Country</td>
+					<td id="country"></td>
+					<td rowspan="2"><img src="#" alt="img"></td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td id="city"></td>
+				</tr>
+				<tr>
+					<td>Temperature</td>
+					<td id="degree"><span>C|F</span></td>
+					<td rowspan="2" id="date">Date
+					</td>
+				</tr>
+				<tr>
+					<td>Weather Type</td>
+					<td id="weather-type"></td>
+					
+				</tr>
+			</table>
+		</div>
+
+		<footer>This is footer area</footer>
+		<script type="text/javascript" src="weather.js"></script>
+	</body>
+
+</html>
