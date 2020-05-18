@@ -23,8 +23,6 @@ window.addEventListener("load", () => {
   const weatherType = document.querySelector("#weather-type");
   const liveDate = document.querySelector("#date");
   const liveTime = document.querySelector("#time");
-
-
   let lat;
   let long;
 
