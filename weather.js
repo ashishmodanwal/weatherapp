@@ -14,7 +14,7 @@ function scrollFunction() {
   }
 }
 window.addEventListener("load", () => {
-  const host = "https://cors-anywhere.herokuapp.com/";
+  
   const apikey = "bf751f1d9439a40de9492bcd89309e85";
   const inputElement = document.querySelector("#id");
   const degree = document.querySelector("#degree");
@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
 
       fetch(
-        `${host}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=bf751f1d9439a40de9492bcd89309e85`,
+        `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=bf751f1d9439a40de9492bcd89309e85`,
         {
           method: "GET",
         }
